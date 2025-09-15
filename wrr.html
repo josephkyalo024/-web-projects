@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaunda Joseph Kyalo – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;line-height:1.6;color:#333}
+a{text-decoration:none}
+
+/* Shared Container */
+.container{width:90%;max-width:1100px;margin:auto;padding:2rem 0}
+
+/* Hero */
+.hero{background:linear-gradient(to right,#4f46e5,#6366f1);color:#fff;text-align:center;padding:5rem 0}
+.hero h1{font-size:2.5rem;margin-bottom:.5rem}
+.hero .subtitle{font-size:1.2rem;margin-bottom:1.5rem}
+.btn{display:inline-block;background:#fff;color:#4f46e5;padding:.75rem 1.5rem;border-radius:30px;font-weight:600;transition:.3s}
+.btn:hover{background:#4f46e5;color:#fff}
+
+/* Section */
+section{padding:4rem 0;text-align:center}
+h2{font-size:2rem;margin-bottom:1rem}
+
+/* Grid for portfolio */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
+.card{background:#fff;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.1);overflow:hidden;text-align:left;transition:.3s;cursor:pointer}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;display:block}
+.card h3{margin:1rem;font-size:1.25rem}
+.card p{margin:0 1rem 1rem;font-size:.95rem}
+
+/* Contact */
+.contact form{max-width:600px;margin:2rem auto 0;display:grid;gap:1rem}
+.contact input,.contact textarea{padding:.75rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;width:100%}
+.contact textarea{resize:vertical;min-height:120px}
+.contact button{background:#4f46e5;color:#fff;border:none;cursor:pointer;padding:.75rem 1.5rem;border-radius:30px;font-weight:600}
+.contact button:hover{background:#3730a3}
+footer{background:#f3f4f6;padding:1rem 0;text-align:center;font-size:.9rem}
+
+/* Hidden sections */
+.project-section{display:none}
+
+/* Demo styles */
+.business-hero{background:#059669;color:#fff;padding:3rem 1rem;text-align:center}
+.business-hero h1{font-size:2rem}
+.business-services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2rem}
+.service{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+
+.store-hero{background:#f59e0b;color:#fff;padding:3rem 1rem;text-align:center}
+.store-products{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-top:2rem}
+.product{background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1);overflow:hidden}
+.product img{width:100%}
+.product .info{padding:1rem}
+.back-btn{margin-top:2rem;display:inline-block;background:#4f46e5;color:#fff;padding:.5rem 1rem;border-radius:20px}
+.back-btn:hover{background:#3730a3}
+</style>
+</head>
+<body>
+
+<!-- Portfolio Home -->
+<div id="home">
+<header class="hero">
+  <div class="container">
+    <h1>Kaunda Joseph Kyalo</h1>
+    <p class="subtitle">Web Designer | WordPress | Front-End Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</header>
+
+<section class="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I’m an aspiring web designer passionate about building clean, responsive websites.
+       Skilled in WordPress, Elementor and basic front-end development.</p>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card" onclick="showSection('business')">
+        <img src="https://source.unsplash.com/400x250/?website" alt="Business Landing Page">
+        <h3>Business Landing Page</h3>
+        <p>One-page responsive landing page for a local business.</p>
+      </div>
+      <div class="card" onclick="showSection('store')">
+        <img src="https://source.unsplash.com/400x250/?ecommerce" alt="WooCommerce Demo Store">
+        <h3>WooCommerce Demo Store</h3>
+        <p>Demo e-commerce store built with WordPress + WooCommerce plugin.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x250/?portfolio" alt="Portfolio">
+        <h3>Personal Portfolio</h3>
+        <p>Responsive personal portfolio website with contact form.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Kaunda Joseph Kyalo. All rights reserved.</p>
+</footer>
+</div>
+
+<!-- Business Landing Page Demo -->
+<div id="business" class="project-section">
+  <div class="business-hero">
+    <h1>GreenLeaf Services</h1>
+    <p>Your trusted local business partner</p>
+  </div>
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="business-services">
+      <div class="service"><h3>Lawn Care</h3><p>Professional maintenance for your garden.</p></div>
+      <div class="service"><h3>Cleaning</h3><p>Residential & commercial cleaning solutions.</p></div>
+      <div class="service"><h3>Consulting</h3><p>Helping you grow your local business.</p></div>
+    </div>
+    <a class="back-btn" onclick="goHome()">← Back to Portfolio</a>
+  </div>
+</div>
+
+<!-- WooCommerce Demo Store -->
+<div id="store" class="project-section">
+  <div class="store-hero">
+    <h1>Kyalo Demo Store</h1>
+    <p>WooCommerce-like product showcase</p>
+  </div>
+  <div class="container">
+    <h2>Products</h2>
+    <div class="store-products">
+      <div class="product"><img src="https://source.unsplash.com/400x300/?shoes" alt=""><div class="info"><h3>Running Shoes</h3><p>$49.99</p></div></div>
+      <div class="product"><img src="https://source.unsplash.com/400x300/?bag" alt=""><div class="info"><h3>Leather Bag</h3><p>$79.99</p></div></div>
+      <div class="product"><img src="https://source.unsplash.com/400x300/?watch" alt=""><div class="info"><h3>Classic Watch</h3><p>$129.99</p></div></div>
+    </div>
+    <a class="back-btn" onclick="goHome()">← Back to Portfolio</a>
+  </div>
+</div>
+
+<script>
+function showSection(id){
+  document.getElementById('home').style.display='none';
+  document.getElementById('business').style.display='none';
+  document.getElementById('store').style.display='none';
+  document.getElementById(id).style.display='block';
+}
+function goHome(){
+  document.getElementById('home').style.display='block';
+  document.getElementById('business').style.display='none';
+  document.getElementById('store').style.display='none';
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>

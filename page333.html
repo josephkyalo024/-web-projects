@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaunda Joseph Kyalo – Portfolio with Real Images</title>
+  <style>
+    /* === GLOBAL STYLES === */
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { line-height: 1.6; color: #333; background-color: #f8f9fa; scroll-behavior: smooth; }
+    a { text-decoration: none; color: inherit; }
+    header { background: #007B5E; color: #fff; padding: 1rem 0; text-align: center; position: sticky; top: 0; z-index: 100; }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    nav a { color: #fff; margin: 0 1rem; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 3rem 0; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; background: #007B5E; color: #fff; border-radius: 5px; margin-top: 1rem; }
+    .btn:hover { background: #005f46; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; display: block; height: 200px; object-fit: cover; }
+    .card-content { padding: 1rem; }
+    .card-content h3 { margin-bottom: 0.5rem; color: #007B5E; }
+    .price { font-weight: bold; color: #333; margin-top: 0.5rem; }
+    footer { background: #007B5E; color: #fff; text-align: center; padding: 1rem; }
+    /* Lightbox */
+    .lightbox { display: none; position: fixed; z-index: 1000; padding-top: 60px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); }
+    .lightbox-content { margin: auto; display: block; width: 80%; max-width: 700px; }
+    .lightbox:target { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kaunda Joseph Kyalo</h1>
+    <p>Web Design & Security Enthusiast</p>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#realestate">Real Estate</a>
+      <a href="#store">Demo Store</a>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container">
+    <h2>My Portfolio</h2>
+    <p>Hello, I’m Joseph. I build responsive web designs and demos. Below are some of my showcase projects.</p>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwxfHxob3VzZXxlbnwwfHx8fDE2NzYzNTQ0NjU&ixlib=rb-1.2.1&w=600" alt="Luxury house">
+        <div class="card-content">
+          <h3>Real Estate Landing Page</h3>
+          <p>Responsive one-page website showcasing houses for sale/rent.</p>
+          <a class="btn" href="#realestate">View Section</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwzfHxjb21wdXRlcnxlbnwwfHx8fDE2NzYzNTQ1Mzg&ixlib=rb-1.2.1&w=600" alt="E-commerce store">
+        <div class="card-content">
+          <h3>WooCommerce Demo Store</h3>
+          <p>Clean, modern e-commerce demo page.</p>
+          <a class="btn" href="#store">View Section</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Estate Section -->
+  <section id="realestate" class="container">
+    <h2>GreenLeaf Real Estate</h2>
+    <p>Featured properties for sale/rent. Contact us to learn more.</p>
+    <div class="cards">
+      <div class="card">
+        <a href="#img1"><img src="https://images.unsplash.com/photo-1600607683120-4ec07f292f27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwzfHxoYW91c2V8ZW58MHx8fHwxNjc2MzU0NTY4&ixlib=rb-1.2.1&w=600" alt="Modern luxury villa"></a>
+        <div class="card-content">
+          <h3>3BR Luxury Villa</h3>
+          <p class="price">$250,000 / KSh 38,000,000</p>
+          <a href="mailto:josephkyalo024@gmail.com" class="btn">Contact Us</a>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#img2"><img src="https://images.unsplash.com/photo-1572120360610-d971b9ca9470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwxfHxhcnBhcnRtZW50fGVufDB8fHx8MTY3NjM1NDU4Mg&ixlib=rb-1.2.1&w=600" alt="Modern apartment"></a>
+        <div class="card-content">
+          <h3>Modern Apartment</h3>
+          <p class="price">$120,000 / KSh 18,000,000</p>
+          <a href="mailto:josephkyalo024@gmail.com" class="btn">Contact Us</a>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#img3"><img src="https://images.unsplash.com/photo-1530541930197-6c0a41d4754b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHw2fHxob3VzZXxlbnwwfHx8fDE2NzYzNTQ2MDM&ixlib=rb-1.2.1&w=600" alt="Family home Kenya"></a>
+        <div class="card-content">
+          <h3>Family Home</h3>
+          <p class="price">$80,000 / KSh 12,000,000</p>
+          <a href="mailto:josephkyalo024@gmail.com" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Store Section -->
+  <section id="store" class="container">
+    <h2>Kyalo Demo Store</h2>
+    <p>Sample products with prices in USD and KSh. Click “Buy / Contact” to email Joseph.</p>
+    <div class="cards">
+      <div class="card">
+        <a href="#prod1"><img src="https://images.unsplash.com/photo-1512499617640-c2bf43404972?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHw0fHxzbWFydHBob25lfGVufDB8fHx8MTY3NjM1NDYxMw&ixlib=rb-1.2.1&w=600" alt="Smartphone"></a>
+        <div class="card-content">
+          <h3>Smartphone</h3>
+          <p class="price">$500 / KSh 75,000</p>
+          <a href="mailto:josephkyalo024@gmail.com" class="btn">Buy / Contact</a>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#prod2"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwzfHxMYXB0b3B8ZW58MHx8fDE2NzYzNTQ2Mjk&ixlib=rb-1.2.1&w=600" alt="Laptop"></a>
+        <div class="card-content">
+          <h3>Laptop</h3>
+          <p class="price">$1,000 / KSh 150,000</p>
+          <a href="mailto:josephkyalo024@gmail.com" class="btn">Buy / Contact</a>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#prod3"><img src="https://images.unsplash.com/photo-1580894732444-29a8030b8422?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwxfHxIZWFkcGhvbmVzfGVufDB8fHx8MTY3NjM1NDYzNw&ixlib=rb-1.2.1&w=600" alt="Wireless Headphones"></a>
+        <div class="card-content">
+          <h3>Wireless Headphones</h3>
+          <p class="price">$150 / KSh 22,500</p>
+          <a href="mailto:josephkyalo024@gmail.com" class="btn">Buy / Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Email: <a href="mailto:josephkyalo024@gmail.com" style="color:white;">josephkyalo024@gmail.com</a> | Phone: 0717682886
+  </footer>
+
+  <!-- Lightboxes for Real Estate -->
+  <div id="img1" class="lightbox"><img src="https://images.unsplash.com/photo-1600607683120-4ec07f292f27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwzfHxoYW91c2V8ZW58MHx8fHwxNjc2MzU0NTY4&ixlib=rb-1.2.1&w=1200" class="lightbox-content"></div>
+  <div id="img2" class="lightbox"><img src="https://images.unsplash.com/photo-1572120360610-d971b9ca9470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwxfHxhcnBhcnRtZW50fGVufDB8fHx8MTY3NjM1NDU4Mg&ixlib=rb-1.2.1&w=1200" class="lightbox-content"></div>
+  <div id="img3" class="lightbox"><img src="https://images.unsplash.com/photo-1530541930197-6c0a41d4754b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHw2fHxob3VzZXxlbnwwfHx8fDE2NzYzNTQ2MDM&ixlib=rb-1.2.1&w=1200" class="lightbox-content"></div>
+
+  <!-- Lightboxes for Store -->
+  <div id="prod1" class="lightbox"><img src="https://images.unsplash.com/photo-1512499617640-c2bf43404972?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHw0fHxzbWFydHBob25lfGVufDB8fHx8MTY3NjM1NDYxMw&ixlib=rb-1.2.1&w=1200" class="lightbox-content"></div>
+  <div id="prod2" class="lightbox"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwzfHxMYXB0b3B8ZW58MHx8fDE2NzYzNTQ2Mjk&ixlib=rb-1.2.1&w=1200" class="lightbox-content"></div>
+  <div id="prod3" class="lightbox"><img src="https://images.unsplash.com/photo-1580894732444-29a8030b8422?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTkzNjZ8MHwxfHNlYXJjaHwxfHxIZWFkcGhvbmVzfGVufDB8fHx8MTY3NjM1NDYzNw&ixlib=rb-1.2.1&w=1200" class="lightbox-content"></div>
+
+</body>
+</html>

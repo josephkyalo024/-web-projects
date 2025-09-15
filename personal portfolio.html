@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaunda Joseph Kyalo – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+  /* Basic Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(to right, #4f46e5, #6366f1);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #fff;
+    color: #4f46e5;
+    padding: .75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background .3s, color .3s;
+  }
+
+  .btn:hover {
+    background: #4f46e5;
+    color: #fff;
+  }
+
+  /* Sections */
+  section {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Projects Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform .3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    display: block;
+  }
+
+  .card h3 {
+    margin: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    margin: 0 1rem 1rem;
+    font-size: .95rem;
+  }
+
+  /* Contact Form */
+  .contact form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .contact input,
+  .contact textarea {
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .contact textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .contact button {
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: .75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+
+  .contact button:hover {
+    background: #3730a3;
+  }
+
+  /* Footer */
+  footer {
+    background: #f3f4f6;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: .9rem;
+  }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1>Kaunda Joseph Kyalo</h1>
+      <p class="subtitle">Web Designer | WordPress | Front-End Developer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m an aspiring web designer passionate about building clean, responsive websites.
+        Skilled in WordPress, Elementor and basic front-end development.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x250/?website" alt="Project 1">
+          <h3>Business Landing Page</h3>
+          <p>One-page responsive landing page for a local business.</p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/400x250/?ecommerce" alt="Project 2">
+          <h3>WooCommerce Demo Store</h3>
+          <p>Demo e-commerce store built with WordPress + WooCommerce plugin.</p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/400x250/?portfolio" alt="Project 3">
+          <h3>Personal Portfolio</h3>
+          <p>Responsive personal portfolio website with contact form.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kaunda Joseph Kyalo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
